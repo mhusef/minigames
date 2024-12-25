@@ -1,0 +1,56 @@
+// {
+//     "compilerOptions": {
+//       "target": "ES6",                  // Specify ECMAScript target version.
+//       "lib": ["DOM", "DOM.Iterable", "ESNext"], // Specify libraries to include.
+//       "allowJs": true,                    // Allow JavaScript files to be imported.
+//       "skipLibCheck": true,               // Skip type checking for declaration files.
+//       "esModuleInterop": true,            // Enable interoperability for ES modules.
+//       "allowSyntheticDefaultImports": true, // Allow default imports from modules without defaults.
+//       "strict": true,                     // Enable all strict type-checking options.
+//       "forceConsistentCasingInFileNames": true, // Ensure consistent casing in imports.
+//       "module": "ESNext",                 // Specify module system.
+//       "moduleResolution": "Node",        // Resolve modules using Node.js-style.
+//       "resolveJsonModule": true,         // Include .json files as modules.
+//       "isolatedModules": true,           // Ensure each file can be transpiled separately.
+//       "noEmit": true,                    // Do not emit compiled files.
+//       "jsx": "react-jsx",                // Use React 17+ JSX transform.
+//       "baseUrl": ".",                    // Base directory for resolving paths.
+//       "paths": {                         // Define path aliases.
+//         "@/*": ["resources/js/*"]
+//       }
+//     },
+//     "include": [
+//       "resources/js/**/*",              // Include your source files.
+//       "vite.config.ts",                 // Include Vite configuration.
+//       "env.d.ts"                        // Include environment type declarations.
+//     ],
+//     "exclude": [
+//       "node_modules",                   // Exclude dependencies.
+//       "dist"                            // Exclude build output.
+//     ]
+// }
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "lib": ["DOM", "DOM.Iterable", "ESNext"],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "react-jsx",
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["resources/js/*"]
+      },
+      "types": ["vite/client"],
+    },
+    "include": ["resources/js", "resources/**/*.ts", "resources/**/*.tsx", "vite.config.ts"],
+    "exclude": ["node_modules", "public", "storage", "vendor", "dist"]
+  }
